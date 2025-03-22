@@ -273,6 +273,24 @@
     
         window.onload = trackUserActivity;
         setInterval(trackUserActivity, 30);
+        function toggleSidebar() {
+    const sidebar = document.getElementById('mySidebar');
+    const overlay = document.getElementById('overlay');
+    const body = document.body;
+
+    if (sidebar.style.width === '250px') {
+        sidebar.style.width = '0';
+        overlay.style.visibility = 'hidden';
+        overlay.style.opacity = '0';
+        body.classList.remove('sidebar-open');
+    } else {
+        sidebar.style.width = '250px';
+        overlay.style.visibility = 'visible';
+        overlay.style.opacity = '1';
+        body.classList.add('sidebar-open');
+    }
+}
+
     </script>
 </body>
 </html>
