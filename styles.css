@@ -1,0 +1,115 @@
+/* Algemene body instellingen */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Hamburger knop instellingen */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    position: fixed; /* Hamburger blijft vast staan */
+    top: 15px;
+    left: 30px;
+    z-index: 1002; /* Zorg ervoor dat de hamburger boven andere elementen komt */
+}
+
+/* Hamburger lijnen */
+.hamburger .bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Sidebar instellingen */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1001; /* Zorg ervoor dat de sidebar onder de hamburger is */
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Hover effect voor sidebar links */
+.sidebar a:hover {
+    color: #ddd;
+}
+
+/* Sluitknop van de sidebar */
+.sidebar .closebtn {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Overlay instellingen */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+    z-index: 999; /* Zorg ervoor dat de overlay onder de sidebar is */
+}
+
+/* Hero sectie */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Overige secties (bijv. over, portfolio) */
+.about, .portfolio {
+    background-color: #111;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
